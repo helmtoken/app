@@ -47,7 +47,9 @@ function ResponsiveAppBar() {
                   <Avatar sx={{ mr: 2 }} src="/logo.png"></Avatar>
                 </Grid>
                 <Grid item>
-                  <Typography variant="h6" color="inherit" noWrap>
+                  <Typography variant="h6" color="inherit" noWrap sx={{
+                    fontWeight: 700,
+                  }}>
                     Helm
                   </Typography>
                 </Grid>
