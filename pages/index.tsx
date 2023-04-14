@@ -30,10 +30,10 @@ export default function Home() {
               color="text.primary"
               gutterBottom
             >
-              Helm
+              stay tuned
             </Typography>
             <Typography variant="h5" align="center" color="text.secondary" paragraph>
-              A store of value and CD earned by sacrificing XEN
+              the app for Helm is on the way
             </Typography>
             <Grid justifyContent="center" container>
               <Grid item>
