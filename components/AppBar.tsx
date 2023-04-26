@@ -12,6 +12,7 @@ import Avatar from '@mui/material/Avatar';
 import Button from '@mui/material/Button';
 import Tooltip from '@mui/material/Tooltip';
 import MenuItem from '@mui/material/MenuItem';
+import PowerSettingsNewIcon from '@mui/icons-material/PowerSettingsNew';
 
 const pages = [
   { name: "Info", href: "" },
@@ -127,7 +128,14 @@ function ResponsiveAppBar() {
 
           <Box sx={{ flexGrow: 0 }}>
             <Tooltip title="Open settings">
-              <Button variant="outlined" onClick={handleOpenUserMenu}>
+              <IconButton onClick={handleOpenUserMenu} sx={{ display: { xs: 'flex', md: 'none' }, p: 0 }}>
+                <Avatar sx={{ backgroundColor: 'inherit', color: 'initial' }}>
+                  <PowerSettingsNewIcon />
+                </Avatar>
+              </IconButton>
+            </Tooltip>
+            <Tooltip title="Open settings">
+              <Button sx={{ display: { xs: 'none', md: 'flex' } }} variant="outlined" onClick={handleOpenUserMenu}>
                 Connect
               </Button>
             </Tooltip>
