@@ -36,7 +36,7 @@ export default function Home() {
             <Typography variant="h5" align="center" color="text.secondary" paragraph>
               community projects related to Helm
             </Typography>
-            <Grid justifyContent="center" container>
+            <Grid spacing={2} justifyContent="center" container>
               <Grid item>
                 <Paper variant="outlined" sx={{ p: 1.5 }}>
                   <Grid direction="column" alignItems="center" justifyContent="center" container>
@@ -54,6 +54,28 @@ export default function Home() {
                     <Grid item>
                       <Typography color="dimgray">
                         A meme token
+                      </Typography>
+                    </Grid>
+                  </Grid>
+                </Paper>
+              </Grid>
+              <Grid item>
+                <Paper variant="outlined" sx={{ p: 1.5 }}>
+                  <Grid direction="column" alignItems="center" justifyContent="center" container>
+                    <Grid item>
+                      <Image src="/harbortokenlogo.svg" width={140} height={140} alt="Moby token logo" />
+                    </Grid>
+                    <Grid item>
+                      <Typography variant="h6">Harbor</Typography>
+                    </Grid>
+                    <Grid item>
+                      <Typography variant="caption" color="dimgray">
+                        Coming soon
+                      </Typography>
+                    </Grid>
+                    <Grid item>
+                      <Typography color="dimgray">
+                        A savings account
                       </Typography>
                     </Grid>
                   </Grid>
