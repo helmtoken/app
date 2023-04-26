@@ -41,10 +41,10 @@ export default function Home() {
                 <Paper variant="outlined" sx={{ p: 1.5 }}>
                   <Grid direction="column" alignItems="center" justifyContent="center" container>
                     <Grid item>
-                      <Image src="/mobytokenlogo.svg" width={150} height={150} alt="Moby token logo" />
+                      <Image src="/mobytokenlogo.svg" width={140} height={140} alt="Moby token logo" />
                     </Grid>
                     <Grid item>
-                      Moby
+                      <Typography variant="h6">Moby</Typography>
                     </Grid>
                     <Grid item>
                       <Typography variant="caption" color="dimgray">
