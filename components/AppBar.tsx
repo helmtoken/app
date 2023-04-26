@@ -12,9 +12,8 @@ import Avatar from '@mui/material/Avatar';
 import Button from '@mui/material/Button';
 import Tooltip from '@mui/material/Tooltip';
 import MenuItem from '@mui/material/MenuItem';
-import PowerSettingsNewIcon from '@mui/icons-material/PowerSettingsNew';
 
-const pages = ['Stake', 'Mint', 'Claim', 'Burn'];
+const pages = ['Stake', 'Burn', 'Mint', 'Claim'];
 const settings = ['Connect', 'Disconnect'];
 
 function ResponsiveAppBar() {
@@ -120,11 +119,9 @@ function ResponsiveAppBar() {
 
           <Box sx={{ flexGrow: 0 }}>
             <Tooltip title="Open settings">
-              <IconButton onClick={handleOpenUserMenu} sx={{ p: 0 }}>
-                <Avatar sx={{ backgroundColor: 'inherit', color: 'initial' }}>
-                  <PowerSettingsNewIcon />
-                </Avatar>
-              </IconButton>
+              <Button variant="outlined" onClick={handleOpenUserMenu}>
+                Connect
+              </Button>
             </Tooltip>
             <Menu
               sx={{ mt: '45px' }}
