@@ -81,6 +81,28 @@ export default function Home() {
                   </Grid>
                 </Paper>
               </Grid>
+              <Grid item>
+                <Paper variant="outlined" sx={{ p: 1.5 }}>
+                  <Grid direction="column" alignItems="center" justifyContent="center" container>
+                    <Grid item>
+                      <Image src="/helmtokenlogo.svg" width={140} height={140} alt="Moby token logo" />
+                    </Grid>
+                    <Grid item>
+                      <Typography variant="h6">Helm NFTs</Typography>
+                    </Grid>
+                    <Grid item>
+                      <Typography variant="caption" color="dimgray">
+                        Coming soon
+                      </Typography>
+                    </Grid>
+                    <Grid item>
+                      <Typography color="dimgray">
+                        Helm stakes as NFTs
+                      </Typography>
+                    </Grid>
+                  </Grid>
+                </Paper>
+              </Grid>
             </Grid>
           </Container>
         </Box>
