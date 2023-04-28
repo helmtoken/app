@@ -119,7 +119,7 @@ function ResponsiveAppBar() {
                 key={page.name}
                 href={page.href}
                 onClick={handleCloseNavMenu}
-                sx={{ my: 2, display: 'block' }}
+                sx={{ my: 2 }}
               >
                 {page.name}
               </Button>
