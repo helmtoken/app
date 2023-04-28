@@ -9,8 +9,10 @@ import Container from '@mui/material/Container';
 import LockIcon from '@mui/icons-material/Lock';
 import PublicIcon from '@mui/icons-material/Public';
 import FiberNewIcon from '@mui/icons-material/FiberNew';
+import NavigateNextIcon from '@mui/icons-material/NavigateNext';
 import AppBar from '../components/AppBar';
 import Footer from '../components/Footer';
+import { IconButton } from '@mui/material';
 
 export default function Home() {
   return (
@@ -38,31 +40,33 @@ export default function Home() {
             <Typography variant="h5" align="center" color="text.secondary" paragraph>
               current ratio is <strong>10,000 XEN:1 HLM</strong>
             </Typography>
-            <Grid spacing={5} direction="column" alignItems="center" justifyContent="center" container>
+            <Grid spacing={3} alignItems="center" justifyContent="center" container>
               <Grid item>
                 <Grid spacing={2} direction="column" alignItems="center" justifyContent="center" container>
                   <Grid item>
-                    <Box sx={{ display: 'flex', alignItems: 'flex-end' }}>
+                    <Box sx={{ display: 'flex', alignItems: 'center' }}>
                       <LockIcon sx={{ color: 'ButtonHighlight', mr: 1, my: 0.5 }} />
-                      <TextField id="input-with-sx" label="XEN amount to lock" variant="standard" />
+                      <TextField id="input-with-sx" label="XEN amount to lock" />
                     </Box>
                   </Grid>
                   <Grid item>
-                    <Box sx={{ display: 'flex', alignItems: 'flex-end' }}>
+                    <Box sx={{ display: 'flex', alignItems: 'center' }}>
                       <FiberNewIcon sx={{ color: 'ButtonHighlight', mr: 1, my: 0.5 }} />
-                      <TextField disabled id="input-with-sx" label="Est. HLM reward" variant="standard" value={0} />
+                      <TextField disabled id="input-with-sx" label="Est. HLM reward (read only)" value={0} />
                     </Box>
                   </Grid>
                   <Grid item>
-                    <Box sx={{ display: 'flex', alignItems: 'flex-end' }}>
+                    <Box sx={{ display: 'flex', alignItems: 'center' }}>
                       <PublicIcon sx={{ color: 'ButtonHighlight', mr: 1, my: 0.5 }} />
-                      <TextField disabled id="input-with-sx" label="Global rank" variant="standard" value={0} />
+                      <TextField disabled id="input-with-sx" label="Global rank (read only)" value={0} />
                     </Box>
                   </Grid>
                 </Grid>
               </Grid>
               <Grid item>
-                <Button variant="outlined" target="_blank" href="">Claim rank and mint</Button>
+                <IconButton sx={{ border: '1px solid gray' }}>
+                  <NavigateNextIcon />
+                </IconButton>
               </Grid>
             </Grid>
           </Container>
