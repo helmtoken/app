@@ -18,8 +18,8 @@ const pages = [
   { name: "Info", href: "" },
   { name: "Community", href: "/community" },
   { name: "Stake", href: "" },
-  { name: "Burn", href: "" },
   { name: "Mint", href: "" },
+  { name: "Burn", href: "" },
   { name: "Claim", href: "" },
 ];
 const settings = ['Connect', 'Disconnect'];
