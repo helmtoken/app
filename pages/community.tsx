@@ -129,7 +129,7 @@ export default function Home() {
                 <Paper variant="outlined" sx={{ p: 1.5 }}>
                   <Grid direction="column" alignItems="center" justifyContent="center" container>
                     <Grid item>
-                      <Image src="/lockerlogo.svg" width={140} height={140} alt="Helm stats website logo" />
+                      <Image src="/vaultlogo.svg" width={140} height={140} alt="Helm stats website logo" />
                     </Grid>
                     <Grid item>
                       <Typography variant="h6">Vault</Typography>
