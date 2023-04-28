@@ -39,7 +39,7 @@ export default function Home() {
               burn
             </Typography>
             <Typography variant="h5" align="center" color="text.secondary" paragraph>
-              burn HLM at will
+              destroy your HLM at will
             </Typography>
             <Grid spacing={3} alignItems="center" justifyContent="center" container>
               <Grid item>
