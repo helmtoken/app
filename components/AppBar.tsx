@@ -15,12 +15,12 @@ import MenuItem from '@mui/material/MenuItem';
 import PowerSettingsNewIcon from '@mui/icons-material/PowerSettingsNew';
 
 const pages = [
-  { name: "Info", href: "" },
+  { name: "Info", href: "/info" },
   { name: "Community", href: "/community" },
-  { name: "Stake", href: "" },
-  { name: "Mint", href: "" },
-  { name: "Burn", href: "" },
-  { name: "Claim", href: "" },
+  { name: "Stake", href: "/stake" },
+  { name: "Mint", href: "/mint" },
+  { name: "Burn", href: "/burn" },
+  { name: "Claim", href: "/claim" },
 ];
 const settings = ['Connect', 'Disconnect'];
 
