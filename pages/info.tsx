@@ -1,30 +1,12 @@
 import * as React from 'react';
 import CssBaseline from '@mui/material/CssBaseline';
+import Grid from '@mui/material/Grid';
+import Paper from '@mui/material/Paper';
 import Box from '@mui/material/Box';
 import Typography from '@mui/material/Typography';
 import Container from '@mui/material/Container';
 import AppBar from '../components/AppBar';
-import Tabs from '@mui/material/Tabs';
-import Tab from '@mui/material/Tab';
 import Footer from '../components/Footer';
-
-function CenteredTabs() {
-  const [value, setValue] = React.useState(0);
-
-  const handleChange = (event: React.SyntheticEvent, newValue: number) => {
-    setValue(newValue);
-  };
-
-  return (
-    <Box sx={{ width: '100%', bgcolor: 'background.paper' }}>
-      <Tabs value={value} onChange={handleChange} centered>
-        <Tab label="Create new" />
-        <Tab label="Active stakes" />
-        <Tab label="Ended stakes" />
-      </Tabs>
-    </Box>
-  );
-}
 
 export default function Home() {
   return (
@@ -47,12 +29,21 @@ export default function Home() {
               align="center"
               color="text.primary"
             >
-              stake
+              info
             </Typography>
             <Typography variant="h5" align="center" color="text.secondary" paragraph>
-              earn rewards by time locking your HLM
+              essential stats
             </Typography>
-            <CenteredTabs />
+            <Grid justifyContent="center" container>
+              <Grid item>
+                <Paper>
+                  <Grid container>
+                    <Grid item></Grid>
+                    <Grid item></Grid>
+                  </Grid>
+                </Paper>
+              </Grid>
+            </Grid>
           </Container>
         </Box>
       </main>

@@ -18,9 +18,10 @@ function CenteredTabs() {
   return (
     <Box sx={{ width: '100%', bgcolor: 'background.paper' }}>
       <Tabs value={value} onChange={handleChange} centered>
-        <Tab label="Create new" />
-        <Tab label="Active stakes" />
-        <Tab label="Ended stakes" />
+        <Tab label="Mint new" />
+        <Tab label="Minted" />
+        <Tab label="Staked" />
+        <Tab label="Burnt" />
       </Tabs>
     </Box>
   );
@@ -47,7 +48,7 @@ export default function Home() {
               align="center"
               color="text.primary"
             >
-              stake
+              NFTs
             </Typography>
             <Typography variant="h5" align="center" color="text.secondary" paragraph>
               earn rewards by time locking your HLM

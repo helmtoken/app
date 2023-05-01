@@ -13,13 +13,14 @@ import Button from '@mui/material/Button';
 import Tooltip from '@mui/material/Tooltip';
 import MenuItem from '@mui/material/MenuItem';
 import PowerSettingsNewIcon from '@mui/icons-material/PowerSettingsNew';
+import LocalFireDepartmentIcon from '@mui/icons-material/LocalFireDepartment';
 
 const pages = [
   { name: "Info", href: "/info" },
   { name: "Community", href: "/community" },
   { name: "Stake", href: "/stake" },
+  { name: "NFTs", href: "/nfts" },
   { name: "Mint", href: "/mint" },
-  { name: "Burn", href: "/burn" },
   { name: "Claim", href: "/claim" },
 ];
 const settings = ['Connect', 'Disconnect'];
@@ -125,6 +126,10 @@ function ResponsiveAppBar() {
               </Button>
             ))}
           </Box>
+          {/* TODO: make mobile friendly */}
+          <IconButton href="/burn">
+            <LocalFireDepartmentIcon />
+          </IconButton>
 
           <Box sx={{ flexGrow: 0 }}>
             <Tooltip title="Open settings">
