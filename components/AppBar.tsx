@@ -17,7 +17,6 @@ import LocalFireDepartmentIcon from '@mui/icons-material/LocalFireDepartment';
 
 const pages = [
   { name: "Info", href: "/info" },
-  { name: "Community", href: "/community" },
   { name: "Stake", href: "/stake" },
   { name: "NFTs", href: "/nfts" },
   { name: "Mint", href: "/mint" },
