@@ -34,11 +34,9 @@ export default function Home() {
               variant="h2"
               align="center"
               color="text.primary"
+              gutterBottom
             >
               mint
-            </Typography>
-            <Typography variant="h5" align="center" color="text.secondary" paragraph>
-              current ratio is <strong>10,000 XEN:1 HLM</strong>
             </Typography>
             <Grid spacing={3} alignItems="center" justifyContent="center" container>
               <Grid item>
@@ -52,7 +50,7 @@ export default function Home() {
                   <Grid item>
                     <Box sx={{ display: 'flex', alignItems: 'center' }}>
                       <FiberNewIcon sx={{ color: 'ButtonHighlight', mr: 1, my: 0.5 }} />
-                      <TextField disabled id="input-with-sx" label="Est. HLM reward (read only)" value={0} />
+                      <TextField id="input-with-sx" label="Est. HLM reward" value={0} />
                     </Box>
                   </Grid>
                   <Grid item>
